@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Home</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/github.min.css" data-svelte="svelte-dd1lau"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass" data-svelte="svelte-dd1lau"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono" data-svelte="svelte-dd1lau">
+		<title>About</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/github.min.css" data-svelte="svelte-dd1lau"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass" data-svelte="svelte-dd1lau"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono" data-svelte="svelte-dd1lau">
 
 		
 
@@ -11,10 +11,9 @@
 		<link rel="modulepreload" href="/a/_app/chunks/vendor-1023b73e.js">
 		<link rel="modulepreload" href="/a/_app/chunks/paths-45dac81d.js">
 		<link rel="modulepreload" href="/a/_app/pages/__layout.svelte-053f6bb2.js">
-		<link rel="modulepreload" href="/a/_app/pages/index.svelte-2f36974b.js">
+		<link rel="modulepreload" href="/a/_app/pages/about.svelte-557de71d.js">
 		<link rel="stylesheet" href="/a/_app/assets/start-0826e215.css">
 		<link rel="stylesheet" href="/a/_app/assets/pages/__layout.svelte-9f42d68a.css">
-		<link rel="stylesheet" href="/a/_app/assets/pages/index.svelte-bc0fe8c2.css">
 
 		<script type="module">
 			import { start } from "/a/_app/start-5e88bb69.js";
@@ -31,11 +30,11 @@
 					error: null,
 					nodes: [
 						import("/a/_app/pages/__layout.svelte-053f6bb2.js"),
-						import("/a/_app/pages/index.svelte-2f36974b.js")
+						import("/a/_app/pages/about.svelte-557de71d.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/",
+						path: "/about",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -58,23 +57,14 @@
 </div>
   
 
-<div><h1 class="svelte-r6scv8">SvelteKit Blog</h1>
-  <p class="info svelte-r6scv8">4 posts.</p>
-  <a href="/a/create-your-blog"><h2 class="title svelte-r6scv8">Create Your Blog with SvelteKit</h2>
-      <p class="svelte-r6scv8">It&#39;s time to rewrite your blog in SvelteKit!</p>
-    </a><a href="/a/deply-to-github"><h2 class="title svelte-r6scv8">Deploy the blog to Github Pages</h2>
-      <p class="svelte-r6scv8">Fun fact: Github Pages is free!</p>
-    </a><a href="/a/decoration copy"><h2 class="title svelte-r6scv8">Decorating Your Blog</h2>
-      <p class="svelte-r6scv8">Little code but fancy look!</p>
-    </a><a href="/a/decoration"><h2 class="title svelte-r6scv8">Decorating Your Blog</h2>
-      <p class="svelte-r6scv8">Little code but fancy look!</p>
-    </a>
-</div>
+<h1>About</h1>
+<p>Recently, SvelteKit is released in public beta. And we could finally see what Rich Harris called &quot;<a href="https://www.youtube.com/watch?v=qSfdtmcZ4d0">Futuristic Web Development</a>&quot; is made of. It&#39;s always better to learn with project, so I made this little blog with SvelteKit and deployed it on the Github Pages.</p>
+<p>The Github repo for this blog is <a href="https://github.com/svelteland/svelte-kit-blog-demo">svelte-kit-blog-demo</a>.</p>
 </div>
 
 
 
-	<script type="svelte-data" url="/index.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"[{\"metadata\":{\"title\":\"Create Your Blog with SvelteKit\",\"date\":\"Apr 3, 2021\",\"excerpt\":\"It's time to rewrite your blog in SvelteKit!\"},\"slug\":\"create-your-blog\"},{\"metadata\":{\"title\":\"Deploy the blog to Github Pages\",\"date\":\"Apr 4, 2021\",\"excerpt\":\"Fun fact: Github Pages is free!\"},\"slug\":\"deply-to-github\"},{\"metadata\":{\"title\":\"Decorating Your Blog\",\"date\":\"Apr 5, 2021\",\"excerpt\":\"Little code but fancy look!\"},\"slug\":\"decoration copy\"},{\"metadata\":{\"title\":\"Decorating Your Blog\",\"date\":\"Apr 5, 2021\",\"excerpt\":\"Little code but fancy look!\"},\"slug\":\"decoration\"}]"}</script>
+	
 </div>
 	</body>
 </html>
