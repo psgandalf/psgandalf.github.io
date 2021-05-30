@@ -7,17 +7,17 @@
 
 		
 
-		<link rel="modulepreload" href="/./_app/start-a98bdad8.js">
+		<link rel="modulepreload" href="/./_app/start-6bedb181.js">
 		<link rel="modulepreload" href="/./_app/chunks/vendor-75bdb180.js">
 		<link rel="modulepreload" href="/./_app/chunks/paths-45dac81d.js">
-		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-6f490bc8.js">
-		<link rel="modulepreload" href="/./_app/pages/[slug].svelte-11d02f6d.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-07bea18f.js">
+		<link rel="modulepreload" href="/./_app/pages/[slug].svelte-581c2a66.js">
 		<link rel="stylesheet" href="/./_app/assets/start-0826e215.css">
 		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-5b470c70.css">
 		<link rel="stylesheet" href="/./_app/assets/pages/[slug].svelte-7f9e302b.css">
 
 		<script type="module">
-			import { start } from "/./_app/start-a98bdad8.js";
+			import { start } from "/./_app/start-6bedb181.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
@@ -30,8 +30,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./_app/pages/__layout.svelte-6f490bc8.js"),
-						import("/./_app/pages/[slug].svelte-11d02f6d.js")
+						import("/./_app/pages/__layout.svelte-07bea18f.js"),
+						import("/./_app/pages/[slug].svelte-581c2a66.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -54,9 +54,9 @@
 </div>
   
 
-<h1 class="title svelte-3xaql2">Blog about FastAPI and Svelte</h1>
-<p class="info"><a href="https://github.com/psgandalf">Micke</a> MAY 28, 2021</p>
-<p>With Svelte Kit released in beta and with my old blog having just one post as they often do it is time to do an update.</p>
+<div><h1 class="title svelte-3xaql2">Blog about FastAPI and Svelte</h1>
+  <p class="info"><a href="https://github.com/psgandalf">Micke</a> MAY 28, 2021</p>
+  <p>With Svelte Kit released in beta and with my old blog having just one post as they often do it is time to do an update.</p>
 <h2>Svelet Kit based blog</h2>
 <p><a href="https://github.com/svelteland/svelte-kit-blog-demo">Svelte kit Blog </a> is the perfect receipe for building this blog on.</p>
 <h2>Building on FastAPI and Svelte</h2>
@@ -64,10 +64,9 @@
 As most of the programs will run on an old fashioned Microsoft based ad I will have to let users authenticate through ldap with FastAPI. The database
 will be Postgresql and I will probably base talking to the database through the orm named ormar. Since the apps will be hosted on Kubernetes i will
 try to get a setup running docker both in development and in the test builds.</p>
-  <br>
-  <br>
   <p>Comments</p>
   <script src="https://utteranc.es/client.js" repo="psgandalf/comments" issue-term="url" label="Comments" theme="github-light" crossorigin="anonymous" async></script>
+</div>
 </div>
 
 
