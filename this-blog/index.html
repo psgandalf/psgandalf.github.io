@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>This blog</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/github.min.css" data-svelte="svelte-dd1lau"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass" data-svelte="svelte-dd1lau"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono" data-svelte="svelte-dd1lau">
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-8f137507.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-75bdb180.js">
+		<link rel="modulepreload" href="/./_app/chunks/paths-45dac81d.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-07bea18f.js">
+		<link rel="modulepreload" href="/./_app/pages/[slug].svelte-3d8e7ca5.js">
+		<link rel="stylesheet" href="/./_app/assets/start-0826e215.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-5b470c70.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/[slug].svelte-7f9e302b.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-8f137507.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-07bea18f.js"),
+						import("/./_app/pages/[slug].svelte-3d8e7ca5.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/this-blog",
+						query: new URLSearchParams(""),
+						params: {"slug":"this-blog"}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+
+
+<div class="g-app-wrapper svelte-11xjeh8"><div><nav class="svelte-lorm98"><a href="/" class="svelte-lorm98"><h3 class="home svelte-lorm98">HOME</h3></a>
+    <a href="/about" class="svelte-lorm98"><h3 class="about svelte-lorm98">about</h3></a></nav>
+</div>
+  
+
+<div><h1 class="title svelte-3xaql2">This blog</h1>
+  <p class="info"><a href="https://github.com/psgandalf">Micke</a> MAY 30, 2021</p>
+  <p>This blog is based on <a href="https://kit.svelte.dev/">Svelte Kit</a>. The github for the <a href="https://github.com/svelteland/svelte-kit-blog-demo">demo blog</a>. I had problem getting the blog up with the latest Svelte Kit so i created a skeleton site with Svelte kit and moved files from the demo blog site to get it working. It was before I knew what I wanted to write about so of course I didn't write it down... Perhaps I will test it again from scratch and if so I will write it down.</p>
+<p>The best part of the blog is the easy way to include code. As they quote on the demo blog site:
+Without highlighting, code are just paragraphs of chaos...</p>
+<p>Just doing something like this:</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> highlight <span class="hljs-keyword">from</span> <span class="hljs-string">'rehype-highlight'</span>;
+
+<span class="hljs-keyword">let</span> runner = unified()
+    .use(remark2rehype)
+    .use(highlight)
+    .use(rehypeStringify);
+</code></pre>
+<p>That's pretty cool.</p>
+  <p>Comments</p>
+  <script src="https://utteranc.es/client.js" repo="psgandalf/comments" issue-term="pathname" label="Comments" theme="github-light" crossorigin="anonymous" async></script>
+</div>
+</div>
+
+
+
+	<script type="svelte-data" url="/this-blog.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"{\"metadata\":{\"title\":\"This blog\",\"date\":\"May 30, 2021\",\"excerpt\":\"This blog\"},\"content\":\"\u003Cp\u003EThis blog is based on \u003Ca href=\\\"https:\u002F\u002Fkit.svelte.dev\u002F\\\"\u003ESvelte Kit\u003C\u002Fa\u003E. The github for the \u003Ca href=\\\"https:\u002F\u002Fgithub.com\u002Fsvelteland\u002Fsvelte-kit-blog-demo\\\"\u003Edemo blog\u003C\u002Fa\u003E. I had problem getting the blog up with the latest Svelte Kit so i created a skeleton site with Svelte kit and moved files from the demo blog site to get it working. It was before I knew what I wanted to write about so of course I didn't write it down... Perhaps I will test it again from scratch and if so I will write it down.\u003C\u002Fp\u003E\\n\u003Cp\u003EThe best part of the blog is the easy way to include code. As they quote on the demo blog site:\\nWithout highlighting, code are just paragraphs of chaos...\u003C\u002Fp\u003E\\n\u003Cp\u003EJust doing something like this:\u003C\u002Fp\u003E\\n\u003Cpre\u003E\u003Ccode class=\\\"hljs language-js\\\"\u003E\u003Cspan class=\\\"hljs-keyword\\\"\u003Eimport\u003C\u002Fspan\u003E highlight \u003Cspan class=\\\"hljs-keyword\\\"\u003Efrom\u003C\u002Fspan\u003E \u003Cspan class=\\\"hljs-string\\\"\u003E'rehype-highlight'\u003C\u002Fspan\u003E;\\n\\n\u003Cspan class=\\\"hljs-keyword\\\"\u003Elet\u003C\u002Fspan\u003E runner = unified()\\n    .use(remark2rehype)\\n    .use(highlight)\\n    .use(rehypeStringify);\\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\\n\u003Cp\u003EThat's pretty cool.\u003C\u002Fp\u003E\"}"}</script>
+</div>
+	</body>
+</html>
