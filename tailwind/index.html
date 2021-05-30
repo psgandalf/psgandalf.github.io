@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Tailwind</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/github.min.css" data-svelte="svelte-dd1lau"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass" data-svelte="svelte-dd1lau"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono" data-svelte="svelte-dd1lau">
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-24a9b55a.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-75bdb180.js">
+		<link rel="modulepreload" href="/./_app/chunks/paths-45dac81d.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-07bea18f.js">
+		<link rel="modulepreload" href="/./_app/pages/[slug].svelte-b0f30455.js">
+		<link rel="stylesheet" href="/./_app/assets/start-0826e215.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-5b470c70.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/[slug].svelte-7f9e302b.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-24a9b55a.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-07bea18f.js"),
+						import("/./_app/pages/[slug].svelte-b0f30455.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/tailwind",
+						query: new URLSearchParams(""),
+						params: {"slug":"tailwind"}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+
+
+<div class="g-app-wrapper svelte-11xjeh8"><div><nav class="svelte-lorm98"><a href="/" class="svelte-lorm98"><h3 class="home svelte-lorm98">HOME</h3></a>
+    <a href="/about" class="svelte-lorm98"><h3 class="about svelte-lorm98">about</h3></a></nav>
+</div>
+  
+
+<div><h1 class="title svelte-3xaql2">Tailwind</h1>
+  <p class="info"><a href="https://github.com/psgandalf">Micke</a> MAY 30, 2021</p>
+  <h2>Tailwindcss</h2>
+<p>I recently started to look at <a href="https://tailwindcss.com/">Tailwindcss</a>. I usually make smaller utility programs and Tailwind seems like a good choice. Being able to use it with Svelte Kit would be really nice. Since Svelte Kit is new there where not that many blogs describing it. I found that <a href="https://github.com/svelte-add">svelte-add</a> did have a tailwindscss addon. When I first added it I got <a href="https://github.com/svelte-add/tailwindcss/issues/50">this error</a>. A couple of day later when I tested it again i did install. So keep in mind that this is beta stuff and may aswell fail in another couple of days...</p>
+<h2>First run</h2>
+<p>When I started the site created with npm init svelte@next sitename that is the way to install Svelte Kit and choosing to create a skeleton project with nothing else. Do a npm i to install and then run npx svelte-add tailwindcss --jit. Running npm run dev the webpage worked but without tailwind working. Comparing with blogs i added a asset directory under src and added yet another css directory with a tailwind.css file containing:</p>
+<pre><code class="hljs language-css"><span class="hljs-keyword">@import</span> <span class="hljs-string">"tailwindcss/base"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"tailwindcss/components"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"tailwindcss/utilities"</span>;
+</code></pre>
+<p>In the routes folder I added a __layout.svelte file containing:</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">script</span>></span><span class="javascript">
+    <span class="hljs-keyword">import</span> <span class="hljs-string">'/src/assets/css/tailwind.css'</span>
+</span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+  
+<span class="hljs-tag">&#x3C;<span class="hljs-name">main</span>></span>
+   <span class="hljs-tag">&#x3C;<span class="hljs-name">slot</span> /></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">main</span>></span>
+</code></pre>
+<p>And now tailwind was working atleas in dev and built for node.</p>
+  <br>
+  <br>
+  <hr>
+  <p>Comments</p>
+  <script src="https://utteranc.es/client.js" repo="psgandalf/comments" issue-term="pathname" label="Comments" theme="github-light" crossorigin="anonymous" async></script>
+</div>
+</div>
+
+
+
+	<script type="svelte-data" url="/tailwind.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"{\"metadata\":{\"title\":\"Tailwind\",\"date\":\"May 30, 2021\",\"excerpt\":\"With a static page blog you have to select a solution to att comments. Doing some investigations pointed to....\"},\"content\":\"\u003Ch2\u003ETailwindcss\u003C\u002Fh2\u003E\\n\u003Cp\u003EI recently started to look at \u003Ca href=\\\"https:\u002F\u002Ftailwindcss.com\u002F\\\"\u003ETailwindcss\u003C\u002Fa\u003E. I usually make smaller utility programs and Tailwind seems like a good choice. Being able to use it with Svelte Kit would be really nice. Since Svelte Kit is new there where not that many blogs describing it. I found that \u003Ca href=\\\"https:\u002F\u002Fgithub.com\u002Fsvelte-add\\\"\u003Esvelte-add\u003C\u002Fa\u003E did have a tailwindscss addon. When I first added it I got \u003Ca href=\\\"https:\u002F\u002Fgithub.com\u002Fsvelte-add\u002Ftailwindcss\u002Fissues\u002F50\\\"\u003Ethis error\u003C\u002Fa\u003E. A couple of day later when I tested it again i did install. So keep in mind that this is beta stuff and may aswell fail in another couple of days...\u003C\u002Fp\u003E\\n\u003Ch2\u003EFirst run\u003C\u002Fh2\u003E\\n\u003Cp\u003EWhen I started the site created with npm init svelte@next sitename that is the way to install Svelte Kit and choosing to create a skeleton project with nothing else. Do a npm i to install and then run npx svelte-add tailwindcss --jit. Running npm run dev the webpage worked but without tailwind working. Comparing with blogs i added a asset directory under src and added yet another css directory with a tailwind.css file containing:\u003C\u002Fp\u003E\\n\u003Cpre\u003E\u003Ccode class=\\\"hljs language-css\\\"\u003E\u003Cspan class=\\\"hljs-keyword\\\"\u003E@import\u003C\u002Fspan\u003E \u003Cspan class=\\\"hljs-string\\\"\u003E\\\"tailwindcss\u002Fbase\\\"\u003C\u002Fspan\u003E;\\n\u003Cspan class=\\\"hljs-keyword\\\"\u003E@import\u003C\u002Fspan\u003E \u003Cspan class=\\\"hljs-string\\\"\u003E\\\"tailwindcss\u002Fcomponents\\\"\u003C\u002Fspan\u003E;\\n\u003Cspan class=\\\"hljs-keyword\\\"\u003E@import\u003C\u002Fspan\u003E \u003Cspan class=\\\"hljs-string\\\"\u003E\\\"tailwindcss\u002Futilities\\\"\u003C\u002Fspan\u003E;\\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\\n\u003Cp\u003EIn the routes folder I added a __layout.svelte file containing:\u003C\u002Fp\u003E\\n\u003Cpre\u003E\u003Ccode class=\\\"hljs language-html\\\"\u003E\u003Cspan class=\\\"hljs-tag\\\"\u003E&#x3C;\u003Cspan class=\\\"hljs-name\\\"\u003Escript\u003C\u002Fspan\u003E\u003E\u003C\u002Fspan\u003E\u003Cspan class=\\\"javascript\\\"\u003E\\n    \u003Cspan class=\\\"hljs-keyword\\\"\u003Eimport\u003C\u002Fspan\u003E \u003Cspan class=\\\"hljs-string\\\"\u003E'\u002Fsrc\u002Fassets\u002Fcss\u002Ftailwind.css'\u003C\u002Fspan\u003E\\n\u003C\u002Fspan\u003E\u003Cspan class=\\\"hljs-tag\\\"\u003E&#x3C;\u002F\u003Cspan class=\\\"hljs-name\\\"\u003Escript\u003C\u002Fspan\u003E\u003E\u003C\u002Fspan\u003E\\n  \\n\u003Cspan class=\\\"hljs-tag\\\"\u003E&#x3C;\u003Cspan class=\\\"hljs-name\\\"\u003Emain\u003C\u002Fspan\u003E\u003E\u003C\u002Fspan\u003E\\n   \u003Cspan class=\\\"hljs-tag\\\"\u003E&#x3C;\u003Cspan class=\\\"hljs-name\\\"\u003Eslot\u003C\u002Fspan\u003E \u002F\u003E\u003C\u002Fspan\u003E\\n\u003Cspan class=\\\"hljs-tag\\\"\u003E&#x3C;\u002F\u003Cspan class=\\\"hljs-name\\\"\u003Emain\u003C\u002Fspan\u003E\u003E\u003C\u002Fspan\u003E\\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\\n\u003Cp\u003EAnd now tailwind was working atleas in dev and built for node.\u003C\u002Fp\u003E\"}"}</script>
+</div>
+	</body>
+</html>
